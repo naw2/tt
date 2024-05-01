@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 st.set_page_config(page_title = 'My Sales Dashboard',page_icon=':bar_chart:',layout='wide')
-df=pd.read_csv('dataset/all_df.csv')
+df=pd.read_csv('all_df.csv')
 st.sidebar.header('Please Filter Here')
 product = st.sidebar.multiselect(
     "Select Product:",
